@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Red Hat Text", sans-serif;
+}
+
+@media (min-width:375px) {
+	body {
+		background-color: hsl(234, 17%, 12%);
+		background-image: url(images/bg-stars.svg);
+		background-position: center;
+		height: 100vh;
+	}
+
+	.main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 55%;
+	}
+
+	.div-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 3px;
+	}
+
+	.div-title > h2 {
+		color: hsl(0, 0%, 100%);
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+
+	.cards-div {
+		position: relative;
+		top: 10%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		min-width: 60%;
+		height: 20%;
+	}
+
+	.counter-div {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 10px;
+		text-align: center;
+		margin: 5px;
+	}
+
+	.counter-div > h1::after {
+		content: "";
+		background-color: hsl(246, 27%, 7%);
+		position: absolute;
+		width: 5px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		height: 8px;
+		top: 33px;
+		right: 0;
+	}
+
+	.counter-div > h1::before {
+		content: "";
+		background-color: hsl(246, 27%, 7%);
+		position: absolute;
+		width: 5px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		height: 8px;
+		top: 33px;
+		left: 0;
+	}
+
+	.counter-div > h1 {
+		margin: 5px;
+		font-size: 40px;
+		position: relative;
+		padding: 10px;
+		top: 5px;
+		background: linear-gradient(to top, hsl(236, 21%, 26%) 50%, hsl(236, 21%, 22%) 50%);
+		width: 100%;
+		border-radius: 10px;
+		color: hsl(345, 95%, 68%);
+		font-weight: 700;
+		cursor: pointer;
+	}
+
+	.counter-div > p {
+		font-size: 9px;
+		top: 70%;
+		margin: 10px;
+		color: hsl(237, 18%, 59%);
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.counter-div-child {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: hsl(235, 16%, 14%);
+		width: 100%;
+		height: 50%;
+		position: relative;
+		bottom: 25%;
+		border-radius: 10px 10px 10px 10px;
+	}
+
+	.counter-div-child > span {
+		position: relative;
+		top: 50%;
+		color: hsl(345, 95%, 68%);
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.patter-hills {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 25%;
+	}
+
+	.attribution {
+		color: hsl(345, 95%, 62%);
+		font-weight: 500;
+	}
+
+	.attribution > a {
+		text-decoration: none;
+	}
+
+	.social-list {
+		position: absolute;
+		bottom: 5%;
+		width: 35%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		transition: .2s;
+	}
+
+	.social-items {
+		list-style: none;
+	}
+
+	.social-items > a {
+		color: hsl(237, 18%, 59%);
+		font-size: 20px;
+		transition: .2s;
+	}
+
+	.social-items > a:hover {
+		color: hsl(345, 95%, 68%);
+	}
+}
+
+@media (min-width: 768px) {
+
+	.counter-div > h1::after {
+		background-color: hsl(246, 27%, 7%);
+		width: 9px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		height: 9px;
+		top: 46%;
+		right: 0;
+	}
+
+	.counter-div > h1::before {
+		background-color: hsl(246, 27%, 7%);
+		width: 9px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		height: 9px;
+		top: 46%;
+		left: 0;
+	}
+
+	.counter-div > h1 {
+		font-size: 60px;
+		width: 10rem;
+	}
+
+	.counter-div > p {
+		font-size: 12px;
+	}
+
+	.social-list {
+		position: absolute;
+		bottom: 10%;
+		width: 25%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		transition: .2s;
+	}
+
+	.social-items > a {
+		font-size: 30px;
+	}
+
+	.attribution {
+		position: absolute;
+		bottom: 20px;
+		left: 23%;
+	}
+
+	.attribution > span {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.div-title {
+		bottom: 15%;
+		position: relative;
+	}
+
+	.counter-div > h1 {
+		font-size: 86px;
+		width: 80%;
+	}
+
+	.social-list {
+		position: absolute;
+		bottom: 10%;
+		width: 15%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		transition: .2s;
+	}
+
+	.counter-div > h1::after {
+		background-color: hsl(246, 27%, 7%);
+		width: 15px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		height: 15px;
+		top: 45%;
+		right: 0;
+	}
+
+	.counter-div > h1::before {
+		background-color: hsl(246, 27%, 7%);
+		width: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		height: 15px;
+		top: 45%;
+		left: 0;
+	}
+
+
+	.counter-div > p {
+		font-size: 15px;
+	}
+
+	.attribution {
+		left: 37%;
+	}
+}
+
+@media (min-width: 1366px) {
+
+	.div-title {
+		position: relative;
+		bottom: 15%;
+	}
+
+	.counter-div > h1 {
+		width: 75%;
+	}
+
+	.attribution {
+		left: 40%;
+	}
+
+	.attribution > span {
+		font-size: 12px;
+	}
+}
