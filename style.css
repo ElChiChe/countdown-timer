@@ -294,3 +294,26 @@
 		font-size: 12px;
 	}
 }
+
+/*ACTIVE CLASS*/
+
+.counter-div > h1 {
+	box-shadow: 0 2px 2px 2px hsl(234, 17%, 18%);
+}
+
+.counter-div {
+	transition: .2s;
+	transform: rotateY(0deg);
+}
+
+.counter-div > .active {
+	transition: .2s;
+	background: lightgreen;
+	transform: rotateX(360deg);
+}
+
+.counter-div > .inactive {
+	transition: .2s;
+	background-color: lightblue;
+	transform: rotateY(360deg);
+}
